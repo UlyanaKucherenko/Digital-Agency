@@ -1,0 +1,20 @@
+.sectionBlog {
+  &__wrapper {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto 170px;
+    padding: 93px 0 105px;
+
+    @media (max-width: 1200px) {
+      padding: 93px 10px 105px;
+    }
+  }
+
+  &__content {
+    padding-top: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
