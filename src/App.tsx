@@ -1,7 +1,11 @@
-import Hello from '~/components/Hello';
+import { Footer } from './components/Footer';
 
 function App() {
-  return <Hello />;
+  return (
+    <>
+      <Footer />
+    </>
+  );
 }
 
 export default App;

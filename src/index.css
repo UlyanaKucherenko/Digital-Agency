@@ -1,7 +1,71 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
+
+:root {
+  /* FONTS */
+
+  --Raleway: 'Raleway', sans-serif;
+  --Mulish: 'Mulish', sans-serif;
+
+  /* SIZES */
+
+  --fs-12: 12px;
+  --fs-14: 14px;
+  --fs-16: 16px;
+  --fs-20: 20px;
+  --fs-24: 24px;
+  --fs-26: 26px;
+  --fs-40: 40px;
+
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* COLORS */
+
+  --white: #ffffff;
+  --wetasphalt: #989cac;
+  --black: #000000;
+  --ruinedSmores: #0d0f16;
+  --blackIsBlack: #0f1118;
+  --watermelon: #ff455b;
+
+  --gradient: linear-gradient(90deg, #ff455b 0%, #ff7245 100%);
+  --border-color: rgba(#ffffff, 0.05);
+}
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--Mulish);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-normal);
+  background: var(--ruinedSmores);
+  color: var(--wetasphalt);
+  line-height: 150%;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--wetasphalt);
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: var(--white);
+  }
 }
