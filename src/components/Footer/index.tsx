@@ -1,56 +1,55 @@
 import logo from '~/assets/img/logo.svg';
-import styles from './index.module.scss';
-import { ListLine } from '../common/ListLine';
-
-const listMenu = ['HOME', 'ABOUT', 'SERVICES', 'PORTFOLIO', 'BLOG', 'CONTACT US'];
+import { ListLine } from '~/components/common/ListLine';
+import { FooterListMenu, ListSocialNetwork } from '~/utils/const';
+import styles from './index.module.css';
 
 export const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className={styles.footer__wrapper}>
-        <div className={styles.footer__menu}>
-          <img src={logo} alt='Logo' className={styles.footer__logo} />
-          <ListLine listMenu={listMenu} />
+      <div className={styles.footerWrapper}>
+        <div className={styles.footerMenu}>
+          <img src={logo} alt='Logo' className={styles.footerLogo} />
+          <ListLine listMenu={FooterListMenu} />
         </div>
-        <div className={styles.footer__info}>
-          <div className={styles.footer__infoColumn}>
-            <div className={styles.footer__infoColumnItem}>
-              <ListLine listMenu={['Fb', 'Tw', 'In']} />
+        <div className={styles.footerInfo}>
+          <div className={styles.footerInfoColumn}>
+            <div className={styles.footerInfoColumnItem}>
+              <ListLine listMenu={ListSocialNetwork} />
             </div>
-            <div>© All rights reserved. Digens {new Date().getFullYear()}</div>
+            <div>&copy; All rights reserved. Digens {new Date().getFullYear()}</div>
           </div>
-          <div className={styles.footer__infoColumn}>
+          <div className={styles.footerInfoColumn}>
             <div>
-              <h5 className={styles.footer__infoTitle}>Address:</h5>
+              <h5 className={styles.footerInfoTitle}>Address:</h5>
               <div className={styles.footer__infoWrapText}>
                 <p className={styles.footer__infoText}>27 Division St, New York, NY 10002, USA</p>
               </div>
             </div>
             <div>
-              <h5 className={styles.footer__infoTitle}>Hit us up:</h5>
-              <div className={styles.footer__infoWrapText}>
-                <p className={styles.footer__infoText}>
-                  <a className={styles.footer__infoTextLink} href='tel:+1 344 789 07 68'>
+              <h5 className={styles.footerInfoTitle}>Hit us up:</h5>
+              <div className={styles.footerInfoWrapText}>
+                <p className={styles.footerInfoText}>
+                  <a className={styles.footerInfoTextLink} href='tel:+1 344 789 07 68'>
                     +1 344 789 07 68
                   </a>
                 </p>
-                <p className={styles.footer__infoText}>
-                  <a className={styles.footer__infoTextLink} href='mailto:info@sitename.com'>
+                <p className={styles.footerInfoText}>
+                  <a className={styles.footerInfoTextLink} href='mailto:info@sitename.com'>
                     info@sitename.com
                   </a>
                 </p>
               </div>
             </div>
             <div>
-              <h5 className={styles.footer__infoTitle}>Useful links</h5>
-              <div className={styles.footer__infoWrapText}>
-                <p className={styles.footer__infoText}>
-                  <a className={styles.footer__infoTextLink} href='/'>
+              <h5 className={styles.footerInfoTitle}>Useful links</h5>
+              <div className={styles.footerInfoWrapText}>
+                <p className={styles.footerInfoText}>
+                  <a className={styles.footerInfoTextLink} href='/'>
                     Help and Support
                   </a>
                 </p>
-                <p className={styles.footer__infoText}>
-                  <a className={styles.footer__infoTextLink} href='/'>
+                <p className={styles.footerInfoText}>
+                  <a className={styles.footerInfoTextLink} href='/'>
                     Careers
                   </a>
                 </p>

@@ -1,4 +1,4 @@
-import style from './index.module.scss';
+import styles from './index.module.css';
 
 interface PropsListLine {
   listMenu: string[];
@@ -6,9 +6,9 @@ interface PropsListLine {
 
 export const ListLine = ({ listMenu }: PropsListLine) => {
   return (
-    <ul className={style.menu}>
-      {listMenu.map((item: any) => (
-        <li key={item} className={style.menu__item}>
+    <ul className={styles.menu}>
+      {listMenu.map((item: string) => (
+        <li key={item} className={styles.menuItem}>
           <a href='/'>{item}</a>
         </li>
       ))}
