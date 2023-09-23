@@ -1,0 +1,42 @@
+.sectionBlog {
+  position: relative;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 2;
+  max-width: var(--main-container);
+  width: 100%;
+  margin: 0 auto;
+  padding: 20rem 0 16rem;
+}
+
+.titleWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.contentWrap {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.wavesImg {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    padding: 20rem var(--padding-container) 0;
+  }
+}

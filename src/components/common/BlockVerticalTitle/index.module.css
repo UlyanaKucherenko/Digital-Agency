@@ -1,0 +1,27 @@
+.wrapper {
+  display: inline-block;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 20%;
+  right: -12%;
+  z-index: 1;
+}
+
+.subtitle {
+  color: var(--white-color);
+  font-family: var(--Raleway);
+  font-size: var(--fs-12);
+  font-weight: 900;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.title {
+  color: var(--white-color);
+  font-family: var(--Raleway);
+  font-size: var(--fs-230);
+  font-weight: 900;
+  line-height: 100%;
+  text-transform: uppercase;
+  opacity: 0.1;
+}

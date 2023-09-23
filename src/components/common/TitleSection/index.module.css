@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.iconSubtitle {
+  width: 1.8rem;
+}
+
+.subtitle {
+  display: flex;
+  gap: 0.8rem;
+  color: var(--watermelon);
+  font-size: var(--fs-12);
+  font-weight: var(--fw-bold);
+  line-height: 160%;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.title {
+  color: var(--white-color);
+  font-family: var(--Raleway);
+  font-size: var(--fs-40);
+  font-weight: var(--fw-bold);
+  line-height: 130%;
+  text-transform: capitalize;
+}

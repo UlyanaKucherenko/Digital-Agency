@@ -1,22 +1,42 @@
-import styles from './index.module.scss';
+import img1 from '~/assets/img/pages/home/blog/img-1.jpg';
+import blogIcon from '~/assets/img/icons/blog-icon.svg';
+import arrowIcon from '~/assets/img/icons/arrow-btn-icon.svg';
 
-interface PropsPost {
+import styles from './index.module.css';
+
+interface IPost {
+  id: number;
+  imgUrl: string;
   title: string;
   userName: string;
   date: string;
 }
+interface PropsIPost {
+  data: IPost;
+}
 
-export const Post = ({ title, userName, date }: PropsPost) => {
+export const Post = ({ data }: PropsIPost) => {
+  const { imgUrl, title, userName, date } = data;
   return (
     <div className={styles.post}>
-      <div className={styles.post__img}>
-        <img src='' alt='' />
+      <div className={styles.postImgWrap}>
+        <img src={img1} alt='' className={styles.postImg} />
       </div>
-      <div className={styles.post__info}>
-        <div>{userName}</div>
-        <div>{date}</div>
+      <div>
+        <ul className={styles.postList}>
+          <li className={styles.postListItem}>
+            <span>{userName}</span>
+          </li>
+          <li className={styles.postListItem}>{date}</li>
+          <li className={styles.postListItem}>
+            <img src={blogIcon} alt='' className={styles.listIcon} />
+          </li>
+        </ul>
+        <h4 className={styles.postTitle}>{title}</h4>
+        <a href='/'>
+          <img src={arrowIcon} alt='' className='styles.buttonLinkIcon' />
+        </a>
       </div>
-      <h4 className={styles.post__title}>{title}</h4>
     </div>
   );
 };

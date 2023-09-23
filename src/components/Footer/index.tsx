@@ -1,4 +1,5 @@
 import logo from '~/assets/img/logo.svg';
+import shadow from '~/assets/img/shadow-blog.svg';
 import { ListLine } from '~/components/common/ListLine';
 import { FooterListMenu, ListSocialNetwork } from '~/utils/const';
 import styles from './index.module.css';
@@ -58,6 +59,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
+      <img src={shadow} alt='' className={styles.shadowGradient} />
     </footer>
   );
 };

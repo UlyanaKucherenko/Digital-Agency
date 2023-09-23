@@ -1,7 +1,7 @@
 import styles from './index.module.css';
 
 interface PropsListLine {
-  listMenu: string[];
+  listMenu: string | any;
 }
 
 export const ListLine = ({ listMenu }: PropsListLine) => {

@@ -1,8 +1,15 @@
+.footer {
+  position: relative;
+  background-color: var(--blackIsBlack);
+}
+
 .footerWrapper {
+  position: relative;
   max-width: var(--main-container);
   width: 100%;
   margin: 0 auto;
   padding: 9.3rem 0 10.5rem;
+  z-index: 2;
 }
 
 .footerLogo {
@@ -54,7 +61,7 @@
 
 .footerInfoTitle {
   margin-bottom: 1rem;
-  color: var(--white);
+  color: var(--white-color);
   font-family: var(--Raleway);
   font-size: var(--fs-16);
   font-weight: var(--fw-semibold);
@@ -83,8 +90,17 @@
   color: var(--white-color);
 }
 
+.shadowGradient {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
 @media (max-width: 1200px) {
   .footerWrapper {
-    padding: 9.3rem 1rem 10.5rem;
+    padding: 9.3rem var(--padding-container) 10.5rem;
   }
 }
