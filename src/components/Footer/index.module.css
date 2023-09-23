@@ -6,7 +6,7 @@
 }
 
 .footerLogo {
-  width: 10rem;
+  width: 100px;
 }
 
 .footerMenu {
@@ -15,6 +15,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 2rem;
+  font-size: var(--fs-small);
   border-bottom: var(--bottom-line);
   border-color: var(--bottom-line-color);
 }
@@ -32,7 +33,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   gap: 2.8rem;
-  max-width: 22.2rem;
+  max-width: 222px;
 }
 
 .footerInfoColumn:nth-child(2) {
@@ -46,23 +47,23 @@
 }
 
 .footerInfoColumnItem {
-  max-width: 14.4rem;
-  font-size: var(--fs-18);
+  max-width: 144px;
+  font-size: var(--fs-large);
   font-weight: var(--fw-bold);
   line-height: 160%;
 }
 
 .footerInfoTitle {
   margin-bottom: 1rem;
-  color: var(--white);
+  color: var(--white-color);
   font-family: var(--Raleway);
-  font-size: var(--fs-16);
+  font-size: var(--fs-medium);
   font-weight: var(--fw-semibold);
   text-transform: capitalize;
 }
 
 .footerInfoWrapText {
-  max-width: 16.2rem;
+  max-width: 162px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -70,17 +71,6 @@
 
 .footerInfoText {
   line-height: 160%;
-}
-
-.footerInfoTextLink {
-  color: var(--wetasphalt);
-  text-decoration: none;
-}
-
-.footerInfoTextLink:focus,
-.footerInfoTextLink:hover,
-.footerInfoTextLink:active {
-  color: var(--white-color);
 }
 
 @media (max-width: 1200px) {
