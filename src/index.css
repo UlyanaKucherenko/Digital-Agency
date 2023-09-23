@@ -17,11 +17,14 @@
   --fs-h4: 2.4rem;
   --fs-h3: 3.2rem;
   --fs-h2: 4rem;
+  --fs-vertical-subtitle: 12rem;
+  --fs-vertical-title: 23rem;
 
   --fw-normal: 400;
   --fw-medium: 500;
   --fw-semibold: 600;
   --fw-bold: 700;
+  --fw-heavy-bold: 900;
 
   --main-container: 1140px;
   --padding-container: 1.5rem;

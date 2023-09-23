@@ -1,16 +1,16 @@
 import { TitleSection } from '~/components/common/TitleSection';
 import { Post } from '~/components/common/Blog/Post';
 import { RButtonLink } from '~/components/UI/RButtonLink';
+import { SectionVerticalTitle } from '~/components/common/SectionVerticalTitle';
 import wavesImage from '~/assets/img/waves.svg';
 
 import { postsList } from './config';
 import styles from './index.module.css';
-import { BlockVerticalTitle } from '~/components/common/BlockVerticalTitle';
 
 export const Blog = () => {
   return (
     <section className={styles.sectionBlog}>
-      <BlockVerticalTitle title='News' subtitle='our blog' />
+      <SectionVerticalTitle title='News' subtitle='our blog' />
 
       <div className={styles.wrapper}>
         <div className={styles.titleWrap}>

@@ -5,14 +5,14 @@
 }
 
 .iconSubtitle {
-  width: 1.8rem;
+  width: 18px;
 }
 
 .subtitle {
   display: flex;
   gap: 0.8rem;
   color: var(--watermelon);
-  font-size: var(--fs-12);
+  font-size: var(--fs-small);
   font-weight: var(--fw-bold);
   line-height: 160%;
   letter-spacing: 1.2px;
@@ -22,7 +22,7 @@
 .title {
   color: var(--white-color);
   font-family: var(--Raleway);
-  font-size: var(--fs-40);
+  font-size: var(--fs-h2);
   font-weight: var(--fw-bold);
   line-height: 130%;
   text-transform: capitalize;
