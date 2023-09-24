@@ -1,4 +1,4 @@
-import img1 from '~/assets/img/pages/home/blog/img-1.jpg';
+// import img1 from '~/assets/img/pages/home/blog/img-1.jpg';
 import blogIcon from '~/assets/img/icons/blog-icon.svg';
 import arrowIcon from '~/assets/img/icons/arrow-btn-icon.svg';
 
@@ -20,7 +20,7 @@ export const Post = ({ data }: PropsIPost) => {
   return (
     <div className={styles.post}>
       <div className={styles.postImgWrap}>
-        <img src={img1} alt='' className={styles.postImg} />
+        <img src={imgUrl} alt='' className={styles.postImg} />
       </div>
       <div>
         <ul className={styles.postList}>
