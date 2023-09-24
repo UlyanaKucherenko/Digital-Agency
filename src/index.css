@@ -19,7 +19,9 @@
   --fs-h2: 4rem;
   --fs-vertical-subtitle: 12rem;
   --fs-vertical-title: 23rem;
+  --fs-percent: 2.6rem;
 
+  --fw-lighter: 300;
   --fw-normal: 400;
   --fw-medium: 500;
   --fw-semibold: 600;
@@ -41,6 +43,7 @@
   --gradient: linear-gradient(90deg, #ff455b 0%, #ff7245 100%);
   --bottom-line: 2px solid;
   --bottom-line-color: rgba(#ffffff, 0.05);
+  --border-percent: 5px solid;
 }
 
 * {
@@ -80,4 +83,8 @@ a:focus,
 a:hover,
 a:active {
   color: var(--white-color);
+}
+
+img {
+  width: 100%;
 }
