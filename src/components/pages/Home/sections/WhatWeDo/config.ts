@@ -1,4 +1,4 @@
-export const WhatWeDoList = [
+export const whatWeDoList = [
   {
     id: 1,
     title: 'Branding',

@@ -1,2 +1,2 @@
-export const FooterListMenu = ['HOME', 'ABOUT', 'SERVICES', 'PORTFOLIO', 'BLOG', 'CONTACT US'];
-export const ListSocialNetwork = ['Fb', 'Tw', 'In'];
+export const footerListMenu = ['HOME', 'ABOUT', 'SERVICES', 'PORTFOLIO', 'BLOG', 'CONTACT US'];
+export const listSocialNetwork = ['Fb', 'Tw', 'In'];

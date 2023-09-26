@@ -1,7 +1,7 @@
 import mainImg from '~/assets/img/pages/home/WhatWeDo/main.jpg';
 import styles from './index.module.css';
 import { TitleSection } from '~/components/common/TitleSection';
-import { WhatWeDoList } from './config';
+import { whatWeDoList } from './config';
 
 export const WhatWeDo = () => {
   return (
@@ -17,7 +17,7 @@ export const WhatWeDo = () => {
             figure out what we can do.
           </p>
           <ul className={styles.list}>
-            {WhatWeDoList.map((item) => (
+            {whatWeDoList.map((item) => (
               <li key={item.id} className={styles.listItem}>
                 <div>
                   <div className={styles.percentWrap}>

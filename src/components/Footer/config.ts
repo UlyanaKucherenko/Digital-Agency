@@ -1,4 +1,4 @@
-export const UsefulLinks = [
+export const usefulLinks = [
   {
     text: ' Help and Support',
     href: '/',
@@ -9,7 +9,7 @@ export const UsefulLinks = [
   },
 ];
 
-export const HitUsUpList = [
+export const hitUsUpList = [
   {
     text: '+1 344 789 07 68',
     href: 'tel:+1 344 789 07 68',
