@@ -1,0 +1,38 @@
+.header {
+  position: fixed;
+  top: 42px;
+  left: 0;
+  width: 100%;
+  padding: 1rem 7rem 1rem 16rem;
+  background-color: transparent;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.headerLogo {
+  width: 120px;
+}
+
+.headerInfo {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.headerTel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.headerTel img {
+  width: 24px;
+}

@@ -1,0 +1,18 @@
+.buttonLink {
+  display: flex;
+  align-items: center;
+}
+
+.buttonLinkText {
+  margin-right: 1rem;
+  display: block;
+  color: var(--white-color);
+  font-weight: var(----fx-extra-bold);
+  line-height: 1.6;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.buttonLinkIcon {
+  width: 3rem;
+}

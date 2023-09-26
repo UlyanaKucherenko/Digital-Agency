@@ -1,8 +1,16 @@
+.footer {
+  position: relative;
+  background-color: var(--blackIsBlack);
+  padding-left: 14rem;
+}
+
 .footerWrapper {
+  position: relative;
   max-width: var(--main-container);
   width: 100%;
   margin: 0 auto;
-  padding: 9.3rem 0 10.5rem;
+  padding: 9.3rem var(--padding-container) 10.5rem;
+  z-index: 2;
 }
 
 .footerLogo {
@@ -50,7 +58,7 @@
   max-width: 144px;
   font-size: var(--fs-large);
   font-weight: var(--fw-bold);
-  line-height: 160%;
+  line-height: 1.6;
 }
 
 .footerInfoTitle {
@@ -70,11 +78,32 @@
 }
 
 .footerInfoText {
-  line-height: 160%;
+  line-height: 1.6;
 }
 
-@media (max-width: 1200px) {
-  .footerWrapper {
-    padding: 9.3rem 1rem 10.5rem;
-  }
+.footerInfoTextLink {
+  color: var(--wetasphalt);
+  text-decoration: none;
+}
+
+.footerInfoTextLink:focus,
+.footerInfoTextLink:hover,
+.footerInfoTextLink:active {
+  color: var(--white-color);
+}
+
+.shadowGradient {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.wavesImg {
+  position: absolute;
+  width: 100%;
+  bottom: 100%;
+  left: 0;
 }

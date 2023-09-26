@@ -1,0 +1,30 @@
+.decorate {
+  width: 200px;
+  position: relative;
+}
+
+.decorateTitle,
+.decorateBigTitle {
+  font-family: var(--Raleway);
+  font-weight: var(--fw-heavy-bold);
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  z-index: 1;
+}
+
+.decorateTitle {
+  font-size: var(--fs-vertical-subtitle);
+  font-weight: var(--fw-heavy-bold);
+  text-transform: uppercase;
+  right: 5%;
+}
+
+.decorateBigTitle {
+  right: 10%;
+  font-size: var(--fs-vertical-title);
+  opacity: 0.1;
+}

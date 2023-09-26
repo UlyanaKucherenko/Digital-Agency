@@ -1,11 +1,7 @@
-import { Footer } from './components/Footer';
+import MainLayout from './components/MainLayout';
 
 function App() {
-  return (
-    <>
-      <Footer />
-    </>
-  );
+  return <MainLayout />;
 }
 
 export default App;

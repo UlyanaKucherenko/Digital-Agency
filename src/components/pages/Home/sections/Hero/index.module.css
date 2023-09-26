@@ -1,0 +1,41 @@
+.sectionHero {
+  position: relative;
+  width: 100%;
+  padding-left: 14rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.columnLeft {
+  width: 50%;
+  padding-right: 14rem;
+}
+
+.mainImg {
+  max-width: 610px;
+}
+
+.sliderContent {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+.wrapperTitle {
+  max-width: 457px;
+}
+
+.text {
+  margin: 3rem 0 6rem;
+  font-size: var(--fs-h5);
+  line-height: 1.6;
+  max-width: 375px;
+}

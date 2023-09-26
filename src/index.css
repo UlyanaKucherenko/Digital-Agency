@@ -17,13 +17,21 @@
   --fs-h4: 2.4rem;
   --fs-h3: 3.2rem;
   --fs-h2: 4rem;
+  --fs-vertical-subtitle: 12rem;
+  --fs-vertical-title: 23rem;
+  --fs-percent: 2.6rem;
 
+  --fw-lighter: 300;
   --fw-normal: 400;
   --fw-medium: 500;
   --fw-semibold: 600;
   --fw-bold: 700;
+  --fw-extra-bold: 800;
+  --fw-heavy-bold: 900;
 
   --main-container: 1140px;
+  --padding-container: 1.5rem;
+  --space-sidebar: 1.4rem;
 
   /* COLORS */
 
@@ -32,11 +40,16 @@
   --black: #000000;
   --ruinedSmores: #020204;
   --blackIsBlack: #0f1118;
+  --closedShutter: #26272c;
+  --blackHole: #0d0f16;
   --watermelon: #ff455b;
 
   --gradient: linear-gradient(90deg, #ff455b 0%, #ff7245 100%);
   --bottom-line: 2px solid;
   --bottom-line-color: rgba(#ffffff, 0.05);
+  --border-percent: 5px solid;
+  --border-line: 2px solid;
+  --border-color-dark: rgba(248, 248, 252, 0.1);
 }
 
 * {
@@ -54,7 +67,7 @@ body {
   font-family: var(--Mulish);
   font-size: var(--fs-main); /* 14px */
   font-weight: var(--fw-normal);
-  background: var(--ruinedSmores);
+  background-color: var(--blackHole);
   color: var(--wetasphalt);
   line-height: 1;
 }
@@ -76,4 +89,8 @@ a:focus,
 a:hover,
 a:active {
   color: var(--white-color);
+}
+
+img {
+  width: 100%;
 }
