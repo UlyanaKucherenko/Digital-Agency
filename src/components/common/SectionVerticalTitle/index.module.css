@@ -1,0 +1,33 @@
+.wrapper {
+  display: inline-block;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 16%;
+  right: -10%;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle {
+  margin-top: -6.4rem;
+  padding-left: 1.4rem;
+  color: var(--white-color);
+  font-family: var(--Raleway);
+  font-size: var(--fs-vertical-subtitle);
+  font-weight: var(--fw-heavy-bold);
+  text-transform: uppercase;
+}
+
+.title {
+  color: var(--white-color);
+  font-family: var(--Raleway);
+  font-size: var(--fs-vertical-title);
+  font-weight: var(--fw-heavy-bold);
+  text-transform: uppercase;
+  opacity: 0.1;
+}
