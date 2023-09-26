@@ -1,0 +1,32 @@
+.sectionServices {
+  position: relative;
+  width: 100%;
+  padding-left: 14rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 26rem var(--padding-container) 26rem;
+}
+
+.wrapperTitle {
+  max-width: 457px;
+}
+
+.text {
+  margin: 3rem 0 6rem;
+  font-size: var(--fs-h5);
+  line-height: 1.6;
+  max-width: 350px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
