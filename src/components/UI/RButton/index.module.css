@@ -1,18 +1,38 @@
-.buttonLink {
+.button {
   display: flex;
+  padding: 12px 40px;
   align-items: center;
-}
-
-.buttonLinkText {
-  margin-right: 1rem;
-  display: block;
+  justify-content: center;
+  background: var(--gradient);
+  border: var(--border-line);
+  cursor: pointer;
   color: var(--white-color);
-  font-weight: 800;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: var(--fs-medium);
+  font-weight: var(--fw-semibold);
   line-height: 1.6;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
 }
 
-.buttonLinkIcon {
-  width: 3rem;
+.primary {
+  background: var(--gradient);
+  color: var(--white-color);
+  border-color: transparent;
+}
+
+.primary:hover {
+  background: transparent;
+  border-color: rgba(var(--white-color), 0.5);
+  color: var(--white-color);
+}
+
+.secondary {
+  background: transparent;
+  border-color: rgba(var(--white-color), 0.5);
+  color: var(--white-color);
+}
+
+.secondary:hover {
+  background: var(--gradient);
+  color: var(--white-color);
 }

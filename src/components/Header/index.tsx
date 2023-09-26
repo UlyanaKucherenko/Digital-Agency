@@ -1,6 +1,7 @@
 import styles from './index.module.css';
 import logo from '~/assets/img/header/logo-header.svg';
 import logoTel from '~/assets/img/header/smartphone.svg';
+import { RButton } from '~/components/UI/RButton';
 
 const Heder = () => {
   return (
@@ -16,7 +17,7 @@ const Heder = () => {
             <a href='tel:+1 547 125 89 65'>+1 547 125 89 65</a>
           </div>
           <div>
-            <button>Get a quote</button>
+            <RButton text='Get a quote' inverted />
           </div>
         </div>
       </div>
