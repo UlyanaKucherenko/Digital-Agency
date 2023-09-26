@@ -1,17 +1,16 @@
 .sectionWhatWeDo {
   position: relative;
+  padding-left: 14rem;
 }
 
 .wrapper {
   position: relative;
   z-index: 2;
-  padding: 0 0 0 14rem;
   display: flex;
 }
 
 .imgWrap {
   max-width: 640px;
-  width: 100%;
   position: relative;
 }
 
@@ -28,7 +27,7 @@
   max-width: 726px;
   color: var(--fs-h5);
   font-size: 20px;
-  line-height: 160%;
+  line-height: 1.6;
 }
 
 .list {
@@ -59,7 +58,7 @@
   color: var(--white-color);
   font-size: var(--fs-percent);
   font-weight: var(--fw-lighter);
-  line-height: 120%;
+  line-height: 1.2;
   text-transform: capitalize;
 }
 

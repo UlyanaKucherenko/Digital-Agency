@@ -11,7 +11,7 @@
   font-family: var(--Raleway);
   font-size: var(--fs-24);
   font-weight: var(fw-semibold);
-  line-height: 150%;
+  line-height: 1.5;
   text-transform: capitalize;
 }
 

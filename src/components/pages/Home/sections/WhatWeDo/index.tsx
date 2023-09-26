@@ -2,7 +2,6 @@ import mainImg from '~/assets/img/pages/home/WhatWeDo/main.jpg';
 import styles from './index.module.css';
 import { TitleSection } from '~/components/common/TitleSection';
 import { WhatWeDoList } from './config';
-// import { SectionVerticalTitle } from '~/components/common/SectionVerticalTitle';
 
 export const WhatWeDo = () => {
   return (
@@ -10,11 +9,6 @@ export const WhatWeDo = () => {
       <div className={styles.wrapper}>
         <div className={styles.imgWrap}>
           <img src={mainImg} alt='' />
-          {/* <SectionVerticalTitle
-            title='Digital '
-            subtitle='Digital'
-            classNameTitle={styles.verticalTitle}
-          /> */}
         </div>
         <div className={styles.infoWrap}>
           <TitleSection title='we develop digital products' subtitle='what we do' />

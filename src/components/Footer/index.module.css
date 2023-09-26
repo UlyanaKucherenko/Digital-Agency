@@ -1,6 +1,7 @@
 .footer {
   position: relative;
   background-color: var(--blackIsBlack);
+  padding-left: 14rem;
 }
 
 .footerWrapper {
@@ -8,7 +9,7 @@
   max-width: var(--main-container);
   width: 100%;
   margin: 0 auto;
-  padding: 9.3rem 0 10.5rem;
+  padding: 9.3rem var(--padding-container) 10.5rem;
   z-index: 2;
 }
 
@@ -57,7 +58,7 @@
   max-width: 144px;
   font-size: var(--fs-large);
   font-weight: var(--fw-bold);
-  line-height: 160%;
+  line-height: 1.6;
 }
 
 .footerInfoTitle {
@@ -77,7 +78,7 @@
 }
 
 .footerInfoText {
-  line-height: 160%;
+  line-height: 1.6;
 }
 
 .footerInfoTextLink {
@@ -100,8 +101,9 @@
   z-index: 1;
 }
 
-@media (max-width: 1200px) {
-  .footerWrapper {
-    padding: 9.3rem var(--padding-container) 10.5rem;
-  }
+.wavesImg {
+  position: absolute;
+  width: 100%;
+  bottom: 100%;
+  left: 0;
 }

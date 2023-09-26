@@ -1,7 +1,5 @@
-// import img1 from '~/assets/img/pages/home/blog/img-1.jpg';
 import blogIcon from '~/assets/img/icons/blog-icon.svg';
 import arrowIcon from '~/assets/img/icons/arrow-btn-icon.svg';
-
 import styles from './index.module.css';
 
 interface IPost {
@@ -34,7 +32,7 @@ export const Post = ({ data }: PropsIPost) => {
         </ul>
         <h4 className={styles.postTitle}>{title}</h4>
         <a href='/'>
-          <img src={arrowIcon} alt='' className='styles.buttonLinkIcon' />
+          <img src={arrowIcon} alt='' className={styles.buttonLinkIcon} />
         </a>
       </div>
     </div>

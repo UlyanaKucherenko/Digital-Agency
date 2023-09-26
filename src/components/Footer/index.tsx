@@ -1,5 +1,6 @@
 import logo from '~/assets/img/logo.svg';
 import shadow from '~/assets/img/shadow-blog.svg';
+import wavesImage from '~/assets/img/waves.svg';
 import { ListLine } from '~/components/common/ListLine';
 import { FooterListMenu, ListSocialNetwork } from '~/utils/const';
 import { FooterLinksColumn } from './FooterLinksColumn';
@@ -9,6 +10,7 @@ import styles from './index.module.css';
 export const Footer = () => {
   return (
     <footer className={styles.footer}>
+      <img src={wavesImage} alt='' className={styles.wavesImg} />
       <div className={styles.footerWrapper}>
         <div className={styles.footerMenu}>
           <img src={logo} alt='Logo' className={styles.footerLogo} />
