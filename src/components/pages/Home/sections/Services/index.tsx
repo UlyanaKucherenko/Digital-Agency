@@ -1,7 +1,7 @@
 import { RButtonLink } from '~/components/UI/RButtonLink';
 import { TitleSection } from '~/components/common/TitleSection';
 import { ServicesItem } from '~/components/common/Services/ServicesItem';
-import { ServicesList } from './config';
+import { servicesList } from './config';
 
 import styles from './index.module.css';
 
@@ -18,7 +18,7 @@ export const Services = () => {
         </div>
 
         <div className={styles.list}>
-          {ServicesList.map((item) => (
+          {servicesList.map((item) => (
             <ServicesItem key={item.title} data={item} />
           ))}
         </div>

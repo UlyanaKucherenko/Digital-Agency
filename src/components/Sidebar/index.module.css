@@ -1,7 +1,6 @@
 .sidebar {
   position: fixed;
-  top: 0;
-  left: -260px;
+  transform: translate(-260px, 0);
   width: 400px;
   height: 100%;
   padding: 12rem 1rem 6rem 7rem;
@@ -11,7 +10,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  transition: left 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .nav {

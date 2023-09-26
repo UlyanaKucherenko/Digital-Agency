@@ -6,13 +6,13 @@ interface PropsListLine {
 }
 
 export const ListLine = ({ listMenu, vertical = false }: PropsListLine) => {
-  const MenuStyle = vertical ? styles.menuVertical : styles.menu;
-  const ItemStyles = vertical ? styles.menuItemVertical : styles.menuItem;
+  const menuStyle = vertical ? styles.menuVertical : styles.menu;
+  const itemStyles = vertical ? styles.menuItemVertical : styles.menuItem;
 
   return (
-    <ul className={MenuStyle}>
+    <ul className={menuStyle}>
       {listMenu.map((item: string) => (
-        <li key={item} className={ItemStyles}>
+        <li key={item} className={itemStyles}>
           <a href='/'>{item}</a>
         </li>
       ))}

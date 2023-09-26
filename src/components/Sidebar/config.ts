@@ -1,4 +1,4 @@
-export const Menu = [
+export const menuList = [
   {
     text: 'About us',
     path: '/',
