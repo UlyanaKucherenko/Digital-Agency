@@ -1,4 +1,3 @@
-import { Footer } from '~/components/Footer';
 import { BeInTouch } from '~/components/pages/Home/sections/BeInTouch';
 import { Blog } from '~/components/pages/Home/sections/Blog';
 import { Hero } from '~/components/pages/Home/sections/Hero';
@@ -15,7 +14,6 @@ const Home = () => {
       <BeInTouch />
       <WhatWeDo />
       <Blog />
-      <Footer />
     </>
   );
 };
