@@ -1,7 +1,7 @@
 export const menuList = [
   {
     text: 'About us',
-    path: '/',
+    path: '/about',
   },
   {
     text: 'Services',

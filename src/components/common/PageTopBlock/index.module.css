@@ -1,0 +1,33 @@
+.wrapperTop {
+  position: relative;
+  padding: 5rem var(--padding-container) 10rem 14rem;
+}
+
+.wrapperInfoTop {
+  max-width: var(--main-container);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bigPageTitle {
+  font-size: var(--fs-page-title-big);
+  text-transform: uppercase;
+  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 0.3;
+  font-size: 180px;
+}
+
+.pageTitle {
+  color: var(--white-color);
+  font-family: var(--Raleway);
+  font-size: var(--fs-page-title);
+  font-weight: var(--fw-heavy-bold);
+  line-height: 1;
+  text-transform: uppercase;
+}
