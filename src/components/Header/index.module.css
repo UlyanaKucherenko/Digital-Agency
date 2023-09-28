@@ -1,7 +1,5 @@
 .header {
   position: fixed;
-  /* top: 42px;
-  left: 0; */
   transform: translate(0, 42px);
   width: 100%;
   padding: 0 7rem 0 16rem;
