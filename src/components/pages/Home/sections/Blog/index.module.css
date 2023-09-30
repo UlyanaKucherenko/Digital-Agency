@@ -62,3 +62,9 @@
     padding: 0 var(--padding-container) 16rem;
   }
 }
+
+@media (max-width: 1024px) {
+  .sectionBlog {
+    padding: 0;
+  }
+}

@@ -1,7 +1,7 @@
 import logo from '~/assets/img/logo.svg';
 import shadow from '~/assets/img/shadow-blog.svg';
 import wavesImage from '~/assets/img/waves.svg';
-import { ListLine } from '~/components/common/ListLine';
+import { ListLine } from '~/components/common/list/ListLine';
 import { footerListMenu, listSocialNetwork } from '~/utils/const';
 import { FooterLinksColumn } from './FooterLinksColumn';
 import { usefulLinks, hitUsUpList } from './config';

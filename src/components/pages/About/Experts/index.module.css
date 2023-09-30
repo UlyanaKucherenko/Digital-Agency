@@ -1,0 +1,26 @@
+.sectionExperts {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--white-color);
+  padding: 0 0 0 var(--space-sidebar);
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  padding: 18.4rem var(--padding-container) 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapperTitle {
+  margin-bottom: 3rem;
+}
+
+.list {
+  display: flex;
+  gap: 1.5rem;
+}

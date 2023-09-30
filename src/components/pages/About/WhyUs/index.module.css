@@ -1,0 +1,45 @@
+.wrapper {
+  position: relative;
+  padding: 14rem 0 0 var(--space-sidebar);
+}
+
+.container {
+  max-width: var(--main-container);
+  padding: 0 var(--padding-container);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14rem;
+}
+
+.text {
+  margin-top: 3rem;
+  max-width: 456px;
+  font-size: var(--fs-medium);
+  line-height: 1.6;
+}
+
+.wrapList {
+  margin-top: 3rem;
+  max-width: 412px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  column-gap: 3rem;
+}
+
+.list li:first-child {
+  margin-top: 5rem;
+}
+.list li:nth-child(3) {
+  margin-top: 3rem;
+}
+.list li:nth-child(2) {
+  margin-bottom: 3rem;
+}
+.list li:last-child {
+  margin-bottom: 5rem;
+}

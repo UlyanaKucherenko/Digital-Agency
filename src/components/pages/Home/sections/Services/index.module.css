@@ -1,7 +1,7 @@
 .sectionServices {
   position: relative;
   width: 100%;
-  padding-left: 14rem;
+  padding: 0 0 0 var(--space-sidebar);
 }
 
 .wrapper {

@@ -1,11 +1,11 @@
 import styles from './index.module.css';
 
-interface PropsListLine {
-  listMenu: string[] | any;
+interface iPropsListLine {
+  listMenu: string | any;
   vertical?: boolean;
 }
 
-export const ListLine = ({ listMenu, vertical = false }: PropsListLine) => {
+export const ListLine = ({ listMenu, vertical = false }: iPropsListLine) => {
   const menuStyle = vertical ? styles.menuVertical : styles.menu;
   const itemStyles = vertical ? styles.menuItemVertical : styles.menuItem;
 

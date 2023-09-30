@@ -9,7 +9,7 @@ interface IVerticalTitle {
 export const VerticalTitle = ({
   bigTitle,
   title,
-  color = 'var(--white--color)',
+  color = 'var(--white-color)',
 }: IVerticalTitle) => {
   return (
     <div className={styles.decorate} style={{ color: `${color}` }}>

@@ -1,6 +1,6 @@
 import styles from './index.module.css';
 import mainImg from '~/assets/img/pages/home/hero/main-img.jpg';
-import { RButtonLink } from '~/components/UI/RButtonLink';
+import { RButton } from '~/components/UI/RButton';
 import { TitleSection } from '~/components/common/TitleSection';
 
 export const Hero = () => {
@@ -23,7 +23,7 @@ export const Hero = () => {
                 <p className={styles.text}>
                   Our team is waiting for a new challenge, so we’re ready to make a cool brand.
                 </p>
-                <RButtonLink text='Get more' path='/' />
+                <RButton text='Get more' />
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 .sectionWhatWeDo {
   position: relative;
-  padding-left: 14rem;
+  padding: 0 0 0 var(--space-sidebar);
 }
 
 .wrapper {
