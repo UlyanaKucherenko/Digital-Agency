@@ -1,12 +1,29 @@
+import { useState, useEffect } from 'react';
+
 import styles from './index.module.css';
 
 interface PropsIRButton {
-  text: string;
-  inverted?: boolean;
+  children: any;
+  variant?: 'primary' | 'secondary';
 }
 
-export const RButton = ({ text, inverted = false }: PropsIRButton) => {
-  const stylesBtn = inverted ? styles.secondary : styles.primary;
+export const RButton = ({ children, variant = 'primary' }: PropsIRButton) => {
+  const [styledBtn, setStyledBtn] = useState(styles.primary);
 
-  return <button className={`${styles.button} ${stylesBtn}`}>{text}</button>;
+  useEffect(() => {
+    switch (variant) {
+      case 'primary': {
+        setStyledBtn(styles.primary);
+        break;
+      }
+      case 'secondary': {
+        setStyledBtn(styles.secondary);
+        break;
+      }
+      default:
+        break;
+    }
+  }, [variant]);
+
+  return <button className={`${styles.button} ${styledBtn}`}>{children}</button>;
 };

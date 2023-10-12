@@ -8,7 +8,7 @@ export const WhyUs = () => {
   return (
     <section className={styles.wrapper}>
       <div className={styles.container}>
-        <div>
+        <div className={styles.textContent}>
           <TitleSection subtitle='why us' title='why people choose us' />
           <p className={styles.text}>
             We appreciate every client and ready to help with all the issues that they have.

@@ -28,3 +28,30 @@
   font-size: var(--fs-vertical-title);
   opacity: 0.1;
 }
+
+.decorateNone {
+  display: none;
+}
+
+@media (max-width: 998px) {
+  .decorate {
+    display: none;
+  }
+  .decorateTitle,
+  .decorateBigTitle {
+    writing-mode: inherit;
+    text-orientation: inherit;
+    transform: none;
+    position: absolute;
+  }
+
+  .decorateTitle {
+    right: auto;
+    bottom: 80px;
+  }
+
+  .decorateBigTitle {
+    /* right: auto;
+    bottom: -20px; */
+  }
+}

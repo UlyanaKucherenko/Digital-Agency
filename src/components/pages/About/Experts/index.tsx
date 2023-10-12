@@ -27,7 +27,7 @@ export const Experts = () => {
           </div>
         </div>
       </div>
-      <VerticalTitle bigTitle='experts' title='experts' color='var(--blackHole)' />
+      <VerticalTitle bigTitle='experts' title='experts' color='dark' />
     </section>
   );
 };

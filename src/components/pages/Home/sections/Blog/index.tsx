@@ -3,8 +3,24 @@ import { Post } from '~/components/common/Blog/Post';
 import { VerticalTitle } from '~/components/common/VerticalTitle';
 import { postsList } from './config';
 import styles from './index.module.css';
+import { useEffect, useState } from 'react';
 
 export const Blog = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const isShowVerticalTitle = windowWidth <= 998 ? true : false;
+
   return (
     <section className={styles.sectionBlog}>
       <div className={styles.wrapper}>
@@ -22,7 +38,8 @@ export const Blog = () => {
           ))}
         </div>
       </div>
-      <VerticalTitle bigTitle='news' title='our blog' />
+
+      <VerticalTitle bigTitle='news' title='our blog' isShow={isShowVerticalTitle} />
     </section>
   );
 };

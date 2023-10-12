@@ -1,6 +1,6 @@
 .button {
   display: flex;
-  padding: 12px 40px;
+  padding: 1.2rem 4rem;
   align-items: center;
   justify-content: center;
   background: var(--gradient);
@@ -35,4 +35,10 @@
 .secondary:hover {
   background: var(--gradient);
   color: var(--white-color);
+}
+
+@media (max-width: 768px) {
+  .button {
+    padding: 1.2rem 1rem;
+  }
 }

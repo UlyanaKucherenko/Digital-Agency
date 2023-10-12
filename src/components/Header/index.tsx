@@ -3,10 +3,13 @@ import { useEffect, useState } from 'react';
 import styles from './index.module.css';
 import logo from '~/assets/img/header/logo-header.svg';
 import logoTel from '~/assets/img/header/smartphone.svg';
+import iconBtnHeader from '~/assets/img/header/mobile/icon-btn-header.svg';
 import { RButton } from '~/components/UI/RButton';
+import { RButtonIcon } from '../UI/RButtonIcon';
 
 const Heder = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,7 +23,19 @@ const Heder = () => {
     };
   }, []);
 
-  const headerScrolled = scrolled ? styles.scrolled : {};
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const headerScrolled = scrolled ? styles.scrolled : '';
 
   return (
     <header className={`${styles.header} ${headerScrolled}`}>
@@ -29,15 +44,21 @@ const Heder = () => {
           <img src={logo} alt='Logo' className={styles.headerLogo} />
         </a>
 
-        <div className={styles.headerInfo}>
-          <div className={styles.headerTel}>
-            <img src={logoTel} alt='' />
-            <a href='tel:+1 547 125 89 65'>+1 547 125 89 65</a>
+        {windowWidth > 1024 ? (
+          <div className={styles.headerInfo}>
+            <div className={styles.headerTel}>
+              <img src={logoTel} alt='' />
+              <a href='tel:+1 547 125 89 65'>+1 547 125 89 65</a>
+            </div>
+            <div>
+              <RButton variant='secondary'>Get a quote</RButton>
+            </div>
           </div>
-          <div>
-            <RButton text='Get a quote' inverted />
-          </div>
-        </div>
+        ) : (
+          <RButtonIcon>
+            <img src={iconBtnHeader} alt='' />
+          </RButtonIcon>
+        )}
       </div>
     </header>
   );

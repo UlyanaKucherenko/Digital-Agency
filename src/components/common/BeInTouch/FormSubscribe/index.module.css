@@ -39,18 +39,14 @@
   color: var(--watermelon);
 }
 
-.button {
-  display: flex;
-  padding: 12px 40px;
-  align-items: center;
-  justify-content: center;
-  background: var(--gradient);
-  border: none;
-  cursor: pointer;
-  color: var(--white-color);
-  text-transform: capitalize;
-  text-align: center;
-  font-size: var(--fs-medium);
-  font-weight: var(--fw-semibold);
-  line-height: 1.6;
+@media (max-width: 768px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    padding: 10rem var(--padding-container);
+  }
 }

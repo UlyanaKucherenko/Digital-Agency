@@ -23,16 +23,16 @@ export const Portfolio = () => {
             <div className={styles.listItem}>
               <img src={img1} alt='' />
             </div>
-            <div>
+            <div className={styles.listItem}>
               <img src={img2} alt='' />
             </div>
-            <div>
+            <div className={styles.listItem}>
               <img src={img3} alt='' />
             </div>
           </div>
         </div>
       </div>
-      <VerticalTitle bigTitle='cases' title='cases' color='var(--blackHole)' />
+      <VerticalTitle bigTitle='cases' title='cases' color='dark' />
     </section>
   );
 };

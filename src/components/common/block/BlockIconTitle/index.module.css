@@ -22,3 +22,9 @@
   font-size: var(--fs-medium);
   line-height: 1.6;
 }
+
+@media (max-width: 1024px) {
+  .item {
+    min-width: 260px;
+  }
+}

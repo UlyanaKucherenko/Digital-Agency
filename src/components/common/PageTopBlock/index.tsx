@@ -9,7 +9,7 @@ interface IPageTitle {
 export const PageTitleBlock = ({ title, listLinks }: IPageTitle) => {
   return (
     <div className={styles.wrapperTop}>
-      <div className={styles.bigPageTitle}>{title}</div>
+      <span className={styles.bigPageTitle}>{title}</span>
       <div className={styles.wrapperInfoTop}>
         <h1 className={styles.pageTitle}>{title}</h1>
         <ListLine listMenu={listLinks} />

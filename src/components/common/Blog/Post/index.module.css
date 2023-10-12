@@ -41,6 +41,7 @@
 
 .postListItem {
   position: relative;
+  white-space: nowrap;
 }
 
 .postListItem::before {

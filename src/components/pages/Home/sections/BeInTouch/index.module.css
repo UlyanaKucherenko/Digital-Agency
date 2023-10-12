@@ -1,6 +1,6 @@
 .sectionBeInTouch {
   position: relative;
-  padding: 0 0 0 14rem;
+  padding: 0 0 0 var(--space-sidebar);
 }
 
 .wrapper {
@@ -8,10 +8,4 @@
   width: 100%;
   z-index: 2;
   padding: 18.4rem var(--padding-container) 2rem;
-}
-
-@media (max-width: 1024px) {
-  .sectionBeInTouch {
-    padding: 0;
-  }
 }

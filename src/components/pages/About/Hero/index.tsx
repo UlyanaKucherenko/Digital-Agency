@@ -10,7 +10,7 @@ export const Hero = () => {
     <section className={styles.wrapper}>
       <PageTitleBlock title='about us' listLinks={links} />
       <div className={styles.container}>
-        <div>
+        <div className={styles.imgWrap}>
           <img src={hero} alt='hero-about' />
         </div>
         <div className={styles.infoBlock}>

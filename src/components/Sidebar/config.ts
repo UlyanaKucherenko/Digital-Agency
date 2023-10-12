@@ -1,44 +1,28 @@
 export const menuList = [
   {
+    text: 'Home',
+    path: '/',
+  },
+  {
     text: 'About us',
     path: '/about',
   },
   {
     text: 'Services',
-    path: '/',
-  },
-  {
-    text: 'Service detail',
+    path: '/services',
   },
   {
     text: 'Portfolio',
-    path: '/',
+    path: '/portfolio',
   },
-  {
-    text: 'Portfolio detail',
-    path: '/',
-  },
+
   {
     text: 'Blog',
-    path: '/',
+    path: '/blog',
   },
-  {
-    text: 'Blog with sidebar',
-    path: '/',
-  },
-  {
-    text: 'Post',
-  },
-  {
-    text: 'Post with sidebar',
-    path: '/',
-  },
+
   {
     text: 'Contact us',
-    path: '/',
-  },
-  {
-    text: '404',
-    path: '/',
+    path: '/contact-us',
   },
 ];
