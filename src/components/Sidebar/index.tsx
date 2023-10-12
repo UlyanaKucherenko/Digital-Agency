@@ -9,7 +9,7 @@ import { listSocialNetwork } from '~/utils/const';
 const Sidebar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  console.log(menuOpen);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -27,21 +27,43 @@ const Sidebar = () => {
     };
   }, []);
 
-  const sidebarStyle = {
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const sidebarStyleDesktop = {
     transform: menuOpen ? 'translate(0, 0)' : ' translate(-260px, 0)',
     backgroundColor: menuOpen || scrolled ? 'var(--blackHole)' : 'transparent',
   };
 
+  const sidebarStyleMobile = {
+    transform: menuOpen ? 'translate(0, 0)' : ' translate(-390px, 0)',
+    backgroundColor: menuOpen || scrolled ? 'var(--blackHole)' : 'transparent',
+  };
+
+  const sidebarStyle = windowWidth <= 1024 ? sidebarStyleMobile : sidebarStyleDesktop;
+
   return (
     <div className={styles.sidebar} style={sidebarStyle}>
-      <button className={styles.btnMenu} onClick={toggleMenu}>
-        <img src={menuOpen ? closeIcon : menuIcon} alt='' width={21} />
-      </button>
+      {menuOpen ? (
+        <button className={styles.btnClose} onClick={toggleMenu}>
+          <img src={closeIcon} alt='' width={21} />
+        </button>
+      ) : (
+        <button className={styles.btnMenu} onClick={toggleMenu}>
+          <img src={menuIcon} alt='' width={21} />
+        </button>
+      )}
 
       <nav className={styles.nav}>
-        <button className={styles.btnMenu} onClick={toggleMenu}>
-          <img src={menuOpen ? closeIcon : menuIcon} alt='' width={21} />
-        </button>
         <ul className={styles.menu}>
           {menuList.map((item) => (
             <li key={item.text} className={styles.menuItem}>

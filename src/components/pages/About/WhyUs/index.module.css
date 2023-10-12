@@ -10,9 +10,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 14rem;
+  flex-wrap: wrap;
+  row-gap: 5rem;
 }
 
+.textContent {
+  padding-right: 13rem;
+}
 .text {
   margin-top: 3rem;
   max-width: 456px;
@@ -42,4 +46,29 @@
 }
 .list li:last-child {
   margin-bottom: 5rem;
+}
+
+@media (max-width: 1024px) {
+  .textContent {
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .list {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .list li:first-child,
+  .list li:nth-child(3) {
+    margin-top: 0;
+    margin-right: auto;
+  }
+  .list li:nth-child(2),
+  .list li:last-child {
+    margin-bottom: 0;
+    margin-left: auto;
+  }
 }

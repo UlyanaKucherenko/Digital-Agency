@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700:800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap');
 
 :root {
   /* FONTS */
@@ -38,6 +38,17 @@
 
   @media (max-width: 1024px) {
     --space-sidebar: 0;
+    --fs-page-title-big: 10rem;
+  }
+
+  @media (max-width: 768px) {
+    --fs-page-title-big: 7rem;
+    --fs-vertical-title: 13rem;
+  }
+
+  @media (max-width: 576px) {
+    --fs-page-title: 3.6rem;
+    --fs-h2: 3.2rem;
   }
 
   /* COLORS */

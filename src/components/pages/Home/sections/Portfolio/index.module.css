@@ -24,3 +24,29 @@
   display: flex;
   gap: 1.5rem;
 }
+
+.listItem {
+  max-width: 400px;
+}
+
+@media (max-width: 998px) {
+  .wrapper {
+    padding: 18.4rem var(--padding-container) 20rem;
+  }
+  .sectionPortfolio {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 10rem var(--padding-container) 20rem;
+  }
+}

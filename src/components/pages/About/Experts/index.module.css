@@ -24,3 +24,19 @@
   display: flex;
   gap: 1.5rem;
 }
+
+@media (max-width: 998px) {
+  .sectionExperts {
+    flex-direction: column;
+  }
+
+  .wrapper {
+    padding: 18.4rem var(--padding-container) 20rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 10rem var(--padding-container) 20rem;
+  }
+}

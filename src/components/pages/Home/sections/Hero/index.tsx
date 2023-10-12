@@ -23,7 +23,7 @@ export const Hero = () => {
                 <p className={styles.text}>
                   Our team is waiting for a new challenge, so we’re ready to make a cool brand.
                 </p>
-                <RButton text='Get more' />
+                <RButton>Get more</RButton>
               </div>
             </div>
           </div>

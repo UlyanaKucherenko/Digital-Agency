@@ -14,7 +14,7 @@ export const FormSubscribe = () => {
       <div>
         <div className={styles.wrapInput}>
           <RInput placeholder='Enter your email' />
-          <RButton text='Subscribe' />
+          <RButton>Subscribe</RButton>
         </div>
         <label>
           <input type='checkbox' />
