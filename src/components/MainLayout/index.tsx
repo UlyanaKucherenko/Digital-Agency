@@ -7,6 +7,7 @@ import Sidebar from '~/components/Sidebar';
 import Header from '~/components/Header';
 import { Footer } from '~/components/Footer';
 import { ErrorPage } from '~/pages/ErrorPage';
+import { routes } from '~/routes';
 
 const MainLayout = () => {
   return (
@@ -15,9 +16,9 @@ const MainLayout = () => {
       <Sidebar />
       <main className={styles.main}>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='*' element={<ErrorPage />} />
+          <Route path={routes.home} element={<Home />} />
+          <Route path={routes.about} element={<About />} />
+          <Route path={routes.pageError} element={<ErrorPage />} />
         </Routes>
       </main>
       <Footer />

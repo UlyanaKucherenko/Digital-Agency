@@ -26,6 +26,7 @@
   font-size: var(--fs-small);
   border-bottom: var(--bottom-line);
   border-color: var(--bottom-line-color);
+  text-transform: uppercase;
 }
 
 .footerInfo {

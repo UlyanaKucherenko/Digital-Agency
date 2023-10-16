@@ -31,6 +31,10 @@
   gap: 1.5rem;
 }
 
+.btnWrap {
+  width: 140px;
+}
+
 @media (max-width: 1024px) {
   .wrapper {
     padding: 16rem var(--padding-container) 16rem;

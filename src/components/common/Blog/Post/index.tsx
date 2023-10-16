@@ -1,6 +1,10 @@
 import blogIcon from '~/assets/img/icons/blog-icon.svg';
 import arrowIcon from '~/assets/img/icons/arrow-btn-icon.svg';
 import styles from './index.module.css';
+import { NavLink } from 'react-router-dom';
+import { routes } from '~/routes';
+import { IconArrow } from '../../icons/IconArrow';
+import { RButtonLink } from '~/components/UI/RButtonLink';
 
 interface IPost {
   id: number;
@@ -17,9 +21,9 @@ export const Post = ({ data }: PropsIPost) => {
   const { imgUrl, title, userName, date } = data;
   return (
     <div className={styles.post}>
-      <div className={styles.postImgWrap}>
+      <NavLink to={routes.post} className={styles.postImgWrap}>
         <img src={imgUrl} alt='' className={styles.postImg} />
-      </div>
+      </NavLink>
       <div>
         <ul className={styles.postList}>
           <li className={styles.postListItem}>
@@ -31,9 +35,7 @@ export const Post = ({ data }: PropsIPost) => {
           </li>
         </ul>
         <h4 className={styles.postTitle}>{title}</h4>
-        <a href='/'>
-          <img src={arrowIcon} alt='' className={styles.buttonLinkIcon} />
-        </a>
+        <RButtonLink path='/' />
       </div>
     </div>
   );

@@ -1,6 +1,12 @@
 .decorate {
-  width: 200px;
+  max-width: 200px;
+  width: 100%;
+  height: auto;
   position: relative;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: rotate(-180deg);
 }
 
 .decorateTitle,
@@ -9,24 +15,27 @@
   font-weight: var(--fw-heavy-bold);
   text-transform: uppercase;
   position: absolute;
-  bottom: 0;
+  top: 0;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  transform: rotate(180deg);
   z-index: 1;
+  display: inline-block;
 }
 
 .decorateTitle {
   font-size: var(--fs-vertical-subtitle);
   font-weight: var(--fw-heavy-bold);
   text-transform: uppercase;
-  right: 5%;
+  right: 0;
 }
 
 .decorateBigTitle {
-  right: 10%;
+  right: 0;
   font-size: var(--fs-vertical-title);
   opacity: 0.1;
+  display: inline-block;
+  padding-top: 100%;
+  animation: text 8s infinite linear;
 }
 
 .decorateNone {
@@ -35,7 +44,8 @@
 
 @media (max-width: 998px) {
   .decorate {
-    display: none;
+    position: initial;
+    transform: none;
   }
   .decorateTitle,
   .decorateBigTitle {
@@ -47,11 +57,42 @@
 
   .decorateTitle {
     right: auto;
-    bottom: 80px;
+    top: 90%;
   }
 
   .decorateBigTitle {
-    /* right: auto;
-    bottom: -20px; */
+    right: auto;
+    top: 80%;
+    padding-top: 0;
+    animation: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .decorateTitle {
+    top: 80%;
+  }
+
+  .decorateBigTitle {
+    top: 70%;
+  }
+}
+
+@media (max-width: 400px) {
+  .decorateTitle {
+    top: 90%;
+  }
+
+  .decorateBigTitle {
+    top: 94%;
+  }
+}
+
+@keyframes text {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-160%);
   }
 }

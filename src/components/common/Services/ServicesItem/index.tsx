@@ -22,7 +22,7 @@ export const ServicesItem = ({ data }: IServicesItem) => {
         </div>
         <div className={styles.servicesItemTitle}>{title}</div>
         <div className={styles.servicesItemText}>{text}</div>
-        <RButtonLink path={path} inverted />
+        <RButtonLink path={path} />
       </div>
     </div>
   );

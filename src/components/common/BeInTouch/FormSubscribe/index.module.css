@@ -29,6 +29,19 @@
   align-items: initial;
   margin-bottom: 1rem;
   gap: 2rem;
+  position: relative;
+}
+
+.btnInput {
+  display: block;
+}
+
+.btnInputMobile {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
 }
 
 .textCheckbox {
@@ -48,5 +61,15 @@
 @media (max-width: 600px) {
   .form {
     padding: 10rem var(--padding-container);
+  }
+}
+
+@media (max-width: 576px) {
+  .btnInput {
+    display: none;
+  }
+
+  .btnInputMobile {
+    display: block;
   }
 }

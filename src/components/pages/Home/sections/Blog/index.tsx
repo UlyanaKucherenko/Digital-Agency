@@ -4,6 +4,7 @@ import { VerticalTitle } from '~/components/common/VerticalTitle';
 import { postsList } from './config';
 import styles from './index.module.css';
 import { useEffect, useState } from 'react';
+import { routes } from '~/routes';
 
 export const Blog = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -29,7 +30,7 @@ export const Blog = () => {
             title='The latest news in digens'
             subtitle='Blog'
             textLink='read blog'
-            linkPath='/'
+            linkPath={routes.blog}
           />
         </div>
         <div className={styles.list}>

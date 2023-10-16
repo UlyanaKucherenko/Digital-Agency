@@ -64,6 +64,8 @@
   width: 1.8rem;
 }
 
-.buttonLinkIcon {
-  width: 3rem;
+.postBtn {
+  position: relative;
+  display: flex;
+  width: auto;
 }

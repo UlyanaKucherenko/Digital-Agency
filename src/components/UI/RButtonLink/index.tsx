@@ -1,5 +1,6 @@
 import styles from './index.module.css';
-import { RArrowIcon } from '../RArrowIcon';
+import { NavLink } from 'react-router-dom';
+import { IconArrow } from '~/components/common/icons/IconArrow';
 
 interface PropsIRButtonLink {
   text?: string;
@@ -8,15 +9,19 @@ interface PropsIRButtonLink {
 }
 
 export const RButtonLink = ({ text, path = '/', inverted = false }: PropsIRButtonLink) => {
-  const fillBlack = inverted ? 'var(--closedShutter)' : 'var(--white-color)';
-  const textBlack = inverted ? { color: 'var(--closedShutter)' } : {};
+  const fillColor = inverted ? 'black' : 'white';
+  const textBlack = inverted ? { color: 'var(--closedShutter)' } : { color: 'var(--white-color)' };
 
   return (
-    <a href={path} className={styles.buttonLink}>
-      <span className={styles.buttonLinkText} style={textBlack}>
-        {text}
-      </span>
-      <RArrowIcon iconClass={styles.buttonLinkText} fill={fillBlack} />
-    </a>
+    <NavLink to={path} className={styles.link}>
+      {text && (
+        <div className={styles.linkText} style={textBlack}>
+          {text}
+        </div>
+      )}
+      <div className={styles.arrowIcon}>
+        <IconArrow color={fillColor} />
+      </div>
+    </NavLink>
   );
 };
