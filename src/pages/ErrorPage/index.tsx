@@ -1,13 +1,16 @@
 import figuresImg from '~/assets/img/pages/errorPage/figures.svg';
 import styles from './index.module.css';
 import { PageTitleBlock } from '~/components/common/PageTopBlock';
+import { routes } from '~/routes';
 
-const links = ['Home', 'About'];
-
+const navLinks = [
+  { text: 'Home', path: routes.home },
+  { text: '404', path: routes.pageError },
+];
 export const ErrorPage = () => {
   return (
     <section className={styles.wrapper}>
-      <PageTitleBlock title='oops!' listLinks={links} />
+      <PageTitleBlock title='oops!' listLinks={navLinks} />
       <div className={styles.container}>
         <div className={styles.imgWrap}>
           <img src={figuresImg} alt='' />

@@ -4,17 +4,20 @@ import { ServicesItem } from '~/components/common/Services/ServicesItem';
 import { servicesList } from './config';
 
 import styles from './index.module.css';
+import { routes } from '~/routes';
 
 export const Services = () => {
   return (
-    <section className={styles.sectionServices}>
+    <section className={styles.sectionServices} id='services-section'>
       <div className={styles.wrapper}>
         <div className={styles.wrapperTitle}>
           <TitleSection title='we develop digital products' subtitle='our Services' />
           <p className={styles.text}>
             You can discover all our services by clicking the link below.
           </p>
-          <RButtonLink text='view all' path='/' />
+          <div className={styles.btnWrap}>
+            <RButtonLink text='view all' path={routes.services} />
+          </div>
         </div>
 
         <div className={styles.list}>

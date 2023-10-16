@@ -4,7 +4,7 @@ import styles from './index.module.css';
 
 interface PropsIRButton {
   children: any;
-  variant?: 'primary' | 'secondary';
+  variant?: 'primary' | 'secondary' | 'icon-btn';
 }
 
 export const RButton = ({ children, variant = 'primary' }: PropsIRButton) => {
@@ -18,6 +18,10 @@ export const RButton = ({ children, variant = 'primary' }: PropsIRButton) => {
       }
       case 'secondary': {
         setStyledBtn(styles.secondary);
+        break;
+      }
+      case 'icon-btn': {
+        setStyledBtn(styles.iconBtn);
         break;
       }
       default:

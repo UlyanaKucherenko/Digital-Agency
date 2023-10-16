@@ -2,8 +2,12 @@ import { TitleSection } from '~/components/common/TitleSection';
 import hero from '~/assets/img/pages/about/hero/hero-about.jpg';
 import styles from './index.module.css';
 import { PageTitleBlock } from '~/components/common/PageTopBlock';
+import { routes } from '~/routes';
 
-const links = ['Home', 'About'];
+const links = [
+  { text: 'Home', path: routes.home },
+  { text: 'About', path: '/about' },
+];
 
 export const Hero = () => {
   return (
@@ -56,3 +60,6 @@ export const Hero = () => {
     </section>
   );
 };
+function useRoute() {
+  throw new Error('Function not implemented.');
+}

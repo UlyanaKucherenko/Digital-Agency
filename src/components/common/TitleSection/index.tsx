@@ -30,7 +30,11 @@ export const TitleSection = ({
           {title}
         </h2>
       </div>
-      {linkPath && <RButtonLink text={textLink} path={linkPath} inverted={inverted} />}
+      {linkPath && (
+        <div className={styles.wrapBtn}>
+          <RButtonLink text={textLink} path={linkPath} inverted={inverted} />
+        </div>
+      )}
     </div>
   );
 };

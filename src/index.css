@@ -36,6 +36,16 @@
   --padding-container: 1.5rem;
   --space-sidebar: 14rem;
 
+  @media (max-width: 1440px) {
+    --fs-vertical-subtitle: 10rem;
+    --fs-vertical-title: 20rem;
+  }
+
+  @media (max-width: 1200px) {
+    --fs-vertical-subtitle: 8rem;
+    --fs-vertical-title: 18rem;
+  }
+
   @media (max-width: 1024px) {
     --space-sidebar: 0;
     --fs-page-title-big: 10rem;

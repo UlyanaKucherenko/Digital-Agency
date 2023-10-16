@@ -1,9 +1,9 @@
-import { ListLine } from '~/components/common/list/ListLine';
+import { IListMenu, ListLine } from '~/components/common/list/ListLine';
 import styles from './index.module.css';
 
 interface IPageTitle {
   title: string;
-  listLinks?: string[];
+  listLinks?: IListMenu[];
 }
 
 export const PageTitleBlock = ({ title, listLinks }: IPageTitle) => {
@@ -12,7 +12,7 @@ export const PageTitleBlock = ({ title, listLinks }: IPageTitle) => {
       <span className={styles.bigPageTitle}>{title}</span>
       <div className={styles.wrapperInfoTop}>
         <h1 className={styles.pageTitle}>{title}</h1>
-        <ListLine listMenu={listLinks} />
+        {listLinks && <ListLine listMenu={listLinks} />}
       </div>
     </div>
   );

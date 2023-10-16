@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
-import styles from './index.module.css';
+import { NavLink } from 'react-router-dom';
+
 import menuIcon from '~/assets/img/icons/menu-icon.svg';
 import closeIcon from '~/assets/img/icons/close-icon.svg';
-import { menuList } from './config';
+import { menuData, listSocialNetwork } from '~/utils/const';
 import { ListLine } from '../common/list/ListLine';
-import { listSocialNetwork } from '~/utils/const';
+import styles from './index.module.css';
 
 const Sidebar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -50,6 +51,9 @@ const Sidebar = () => {
   };
 
   const sidebarStyle = windowWidth <= 1024 ? sidebarStyleMobile : sidebarStyleDesktop;
+  const closeSidebarMenu = () => {
+    setMenuOpen(false);
+  };
 
   return (
     <div className={styles.sidebar} style={sidebarStyle}>
@@ -65,9 +69,20 @@ const Sidebar = () => {
 
       <nav className={styles.nav}>
         <ul className={styles.menu}>
-          {menuList.map((item) => (
-            <li key={item.text} className={styles.menuItem}>
-              <a href={item.path}>{item.text}</a>
+          {menuData.map((item) => (
+            <li key={item.text}>
+              <NavLink
+                to={item.path}
+                className={styles.menuItem}
+                style={({ isActive }) => {
+                  return {
+                    color: isActive ? 'var(--white-color)' : '',
+                  };
+                }}
+                onClick={closeSidebarMenu}
+              >
+                {item.text}
+              </NavLink>
             </li>
           ))}
         </ul>

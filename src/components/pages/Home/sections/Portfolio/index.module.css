@@ -39,14 +39,22 @@
 }
 
 @media (max-width: 600px) {
-  .list {
-    flex-wrap: wrap;
-    justify-content: center;
+  .wrapper {
+    padding: 10rem var(--padding-container) 20rem;
+  }
+
+  .listItem {
+    max-width: 330px;
+    width: 100%;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .wrapper {
-    padding: 10rem var(--padding-container) 20rem;
+    padding: 10rem var(--padding-container) 18rem;
+  }
+  .list {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

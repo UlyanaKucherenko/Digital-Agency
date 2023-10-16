@@ -4,6 +4,7 @@ import img2 from '~/assets/img/pages/home/portfolio/2.jpg';
 import img3 from '~/assets/img/pages/home/portfolio/3.jpg';
 import { TitleSection } from '~/components/common/TitleSection';
 import { VerticalTitle } from '~/components/common/VerticalTitle';
+import { routes } from '~/routes';
 
 export const Portfolio = () => {
   return (
@@ -13,7 +14,7 @@ export const Portfolio = () => {
           <TitleSection
             title='check our latest cases'
             subtitle='portfolio'
-            linkPath='/'
+            linkPath={routes.portfolio}
             textLink='view all'
             inverted
           />
