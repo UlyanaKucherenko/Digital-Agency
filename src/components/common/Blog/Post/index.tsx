@@ -1,9 +1,7 @@
 import blogIcon from '~/assets/img/icons/blog-icon.svg';
-import arrowIcon from '~/assets/img/icons/arrow-btn-icon.svg';
 import styles from './index.module.css';
 import { NavLink } from 'react-router-dom';
 import { routes } from '~/routes';
-import { IconArrow } from '../../icons/IconArrow';
 import { RButtonLink } from '~/components/UI/RButtonLink';
 
 interface IPost {

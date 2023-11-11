@@ -55,9 +55,11 @@ const Heder = () => {
             </div>
           </div>
         ) : (
-          <RButtonIcon>
-            <img src={iconBtnHeader} alt='' />
-          </RButtonIcon>
+          <div>
+            <a href='tel:+1 547 125 89 65'>
+              <img src={iconBtnHeader} alt='phone' />
+            </a>
+          </div>
         )}
       </div>
     </header>

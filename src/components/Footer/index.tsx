@@ -14,12 +14,12 @@ export const Footer = () => {
       <div className={styles.footerWrapper}>
         <div className={styles.footerMenu}>
           <img src={logo} alt='Logo' className={styles.footerLogo} />
-          <ListLine listMenu={menuData} />
+          <ListLine listMenu={menuData} type='nav' />
         </div>
         <div className={styles.footerInfo}>
           <div className={styles.footerInfoColumn}>
             <div className={styles.footerInfoColumnItem}>
-              <ListLine listMenu={listSocialNetwork} />
+              <ListLine listMenu={listSocialNetwork} type='link' />
             </div>
             <div>&copy; All rights reserved. Digens {new Date().getFullYear()}</div>
           </div>
