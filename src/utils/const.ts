@@ -3,15 +3,15 @@ import { routes } from '../routes/index';
 export const listSocialNetwork = [
   {
     text: 'Fb',
-    path: '/',
+    path: 'https://uk-ua.facebook.com/',
   },
   {
     text: 'Tw',
-    path: '/',
+    path: 'https://twitter.com/',
   },
   {
     text: 'In',
-    path: '/',
+    path: 'https://www.linkedin.com/',
   },
 ];
 

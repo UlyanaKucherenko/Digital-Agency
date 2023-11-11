@@ -21,7 +21,15 @@
   width: 100%;
 }
 
-.btnMenu,
+.btnMenu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 15%;
+  top: 60px;
+}
+
 .btnClose {
   background-color: transparent;
   border: none;
@@ -45,7 +53,7 @@
 .sidebarLinks {
   position: absolute;
   right: 15%;
-  bottom: 80px;
+  bottom: 20%;
 }
 
 @media (max-width: 1024px) {
@@ -56,5 +64,12 @@
   .btnMenu {
     top: 30px;
     right: -12%;
+  }
+}
+
+@media (min-width: 400px) {
+  .sidebar {
+    width: 390px;
+    /* transform: translate(-260px, 0); */
   }
 }

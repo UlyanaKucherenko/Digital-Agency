@@ -46,7 +46,7 @@ const Sidebar = () => {
   };
 
   const sidebarStyleMobile = {
-    transform: menuOpen ? 'translate(0, 0)' : ' translate(-390px, 0)',
+    transform: menuOpen ? 'translate(0, 0)' : ' translate(-100%, 0)',
     backgroundColor: menuOpen || scrolled ? 'var(--blackHole)' : 'transparent',
   };
 
@@ -89,7 +89,7 @@ const Sidebar = () => {
       </nav>
 
       <div className={styles.sidebarLinks}>
-        <ListLine listMenu={listSocialNetwork} vertical />
+        <ListLine listMenu={listSocialNetwork} vertical type='link' />
       </div>
     </div>
   );
