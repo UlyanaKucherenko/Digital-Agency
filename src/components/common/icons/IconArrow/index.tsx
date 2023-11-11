@@ -15,7 +15,6 @@ export const IconArrow = ({
   color = 'white',
   iconClass,
   rotate = 'right',
-  animation,
 }: IIconArrow) => {
   const [fillColor, setFillColor] = useState('var(--white-color)');
   const [stylesArrow, setStylesArrow] = useState(styles.rightArrow);

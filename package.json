@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ulyanakucherenko.github.io/Digital-Agency",
   "name": "vite-react-ts-eslint-prettier",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +11,9 @@
     "lint:fix": "npm run lint -- --fix",
     "prettier": "npx prettier src --check",
     "prettier:fix": "npm run prettier -- --write",
-    "format": "npm run prettier:fix && npm run lint:fix"
+    "format": "npm run prettier:fix && npm run lint:fix",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.1.0",
@@ -34,6 +37,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
+    "gh-pages": "^6.0.0",
     "prettier": "^2.6.2",
     "sass": "^1.67.0",
     "typescript": "^4.6.3",

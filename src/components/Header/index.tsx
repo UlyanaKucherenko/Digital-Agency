@@ -5,7 +5,6 @@ import logo from '~/assets/img/header/logo-header.svg';
 import logoTel from '~/assets/img/header/smartphone.svg';
 import iconBtnHeader from '~/assets/img/header/mobile/icon-btn-header.svg';
 import { RButton } from '~/components/UI/RButton';
-import { RButtonIcon } from '../UI/RButtonIcon';
 
 const Heder = () => {
   const [scrolled, setScrolled] = useState(false);

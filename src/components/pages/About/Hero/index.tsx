@@ -60,6 +60,3 @@ export const Hero = () => {
     </section>
   );
 };
-function useRoute() {
-  throw new Error('Function not implemented.');
-}
