@@ -18,3 +18,4 @@ npm run dev
 ```
 Runs the app in the development mode.
 Open http://localhost:3000 to view it in your browser.
+![Screenshot 2023-06-12 at 23.20.18](/agancy.png)
