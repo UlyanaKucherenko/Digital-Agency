@@ -1,6 +1,6 @@
 ## Digital-Agency App
 
-**DEMO**: [u-react-weather.netlify.app](https://digital-agency-pp.netlify.app/)
+**DEMO**: [digital-agency-pp.netlify.app](https://digital-agency-pp.netlify.app/)
 
 
 - **Intuitive Design:** The user-friendly interface makes it easy to access and understand site information.
